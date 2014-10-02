@@ -36,7 +36,7 @@ public class MyActivity extends Activity {
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
                 btnAgregar = (Button) findViewById(R.id.btnAgregar);
-                btnAgregar.setEnabled(charSequence.toString().trim().isEmpty());
+                btnAgregar.setEnabled(!charSequence.toString().trim().isEmpty());
 
             }
         });
